@@ -6,6 +6,12 @@
     <title>Барбер шоп</title>
 </head>
 <body>
+  <style>
+    body{
+      color:white;
+      background:black;
+    }
+  </style>
     <header>
         <nav>
             <a>
@@ -150,17 +156,29 @@
         <!-- Здесь будет форма логина -->
             <form action="https://echo.htmlacademy.ru" method="POST">
                 <p>
-                    <label for="login-login"></label>
-                    <input id="login-login" type="text" placeholder="Логин">
+                    <label for="login-login" >Логин</label>
+                    <input id="login-login" type="email" placeholder="Логин" required>
                 </p>
-
+                <p>
+                    <label for="login-password">Парол</label>
+                    <input id="login-password" type="password" placeholder="********" required>
+                 </p>
+              <p>
+                <lable>
+                  <input type="checkbox" name="remember">
+                  Запомни меня
+                </lable>
+                <a href="#"> Я заыл пароль</a>
+              </p>
+                 <button type="submite">Войти</button>
             </form>
-
+            <button type="button">Закрыть</button>
     </section>
 
     <section>
         <h2>Как до нас добраться</h2>
         <!-- Здесь будет карта -->
+      
         <button type="button">Закрыть</button>
     </section>
 </body>
