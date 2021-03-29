@@ -1,47 +1,54 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Барбер шоп</title>
 </head>
 <body>
-<!--   <style>
-    body{
-      color:white;
-      background:black;
-    }
-  </style> -->
-    <header>
-        <nav>
-            <a>
+
+    <header class="main-header">
+        <nav class="main-navigation" >
+            <a class="main-header-logo">
                 <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа" >
             </a>
-          <ul>
-            <li><a href="blank.html">ИНФОРМАЦИЯ</a></li>
-            <li><a href="blank.html">НОВОСТИ</a></li>
-            <li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
-            <li><a href="catalog.html">МАГАЗИН</a></li>
-            <li><a href="blank.html">КОНТАКТЫ</a></li>
-          </ul>
-          <a href="glank.html" >ВХОД</a>
+
+         <div class="main-navigation-wrapper">
+             <div class="container">
+                <ul class="site-navigation">
+                    <li><a href="blank.html">ИНФОРМАЦИЯ</a></li>
+                    <li><a href="blank.html">НОВОСТИ</a></li>
+                    <li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
+                    <li><a href="catalog.html">МАГАЗИН</a></li>
+                    <li><a href="blank.html">КОНТАКТЫ</a></li>
+                  </ul>
+             </div>
+         </div>
+
+          <div class="user-navigation">
+            <a href="glank.html" class="login-link" >ВХОД</a>
+          </div>
         </nav>
     </header>
-    <main>
+    <main class="container">
 
-        <h1>Барбершоп "Бординский"</h1>
+        <h1 class="visually-hidden">Барбершоп "Бординский"</h1>
         
-        <section>
+        <section class="features">
             <h2>Премущества</h2>
-            <ul>
-                <li>
+            <ul class="features-list">
+                <li class="feature-item">
                     <h3>БЫСТРО</h3>
                     <p>
                         МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО 
                         И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
                     </p>
                 </li>
-                <li>
+                <li class="feature-item">
                     <h3>КРУТО</h3>
                     <p>
                         ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
@@ -50,7 +57,7 @@
 
                     </p>
                 </li>
-                <li>
+                <li class="feature-item">
                     <h3>ДОРОГО</h3>
                     <p>
                         НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И   
@@ -60,47 +67,60 @@
                 </li>
             </ul>
         </section>
+  
+        <div class="index-columns">
 
-        <section>
-            <h2>НОВОСТИ</h2>
-            <ul>
-                <li>
-                    <p>
-                        НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
-                    </p>
-                    <time datetime="2020-11-16">16 Ноября</time>
-                </li>
-            </ul>
+            <section class="news">
+                <h2>НОВОСТИ</h2>
+                <ul class="news-list">
+                    <li>
+                        <p>
+                            НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+                        </p>
+                        <time datetime="2020-11-16">16 Ноября</time>
+                    </li>
+                    <li>
+                        <p>
+                            В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+                        </p>
+                        <time datetime="2021-31-21"> 21 Марта</time>
+                    </li>
+                </ul>
+                <a  class="button" href="blank.html">Все Новости</a>
+            </section>
+    
+            <section class="gallery-container">
+                <h2>ФОТОГАЛЕРЕЯ</h2>
 
-        </section>
+                <div class="gallery-container">
+                    <figure class="gallery-content">
+                        <a href="#">
+                            <img src="img/studio.png"  height="162px" width="286" alt="Интерер">
+                        </a>
+                    </figure>
+                    <button  class="button gallery-button gallery-button-back" type="button" disabled>НАЗАД</button>
+                    <button class="button gallery-button gallery-button-next" type="button">ВПЕРЁД</button>
+                </div>
+            </section>
+            
+        </div>
 
-        <section>
-            <h2>ФОТОГАЛЕРЕЯ</h2>
-            <figure>
-                <a href="#">
-                    <img src="img/studio.png"  height="162px" width="286" alt="Интерер">
-                </a>
-               
-            </figure>
-            <button type="button" disabled>НАЗАД</button>
-            <button type="button">ВПЕРЁД</button>
-        </section>
-
-        <section>
-            <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>  
+    <div class="index-columns">
+        <section class="contacts">
+            <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
             <p>
                 БАРБЕРШОП «БОРОДИНСКИЙ» <br>
                 АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br>
                 ТЕЛЕФОН: +7 (812) 666-02-66
             </p>
-            
+
             <p>
                 ВРЕМЯ РАБОТЫ: <br>
                 ПН—ПТ: С 10:00 ДО 22:00 <br>
                 СБ—ВС: С 10:00 ДО 19:00
             </p>
 
-            <a href="blank.html">КАК ПРОЕХАТЬ</a>
+            <a class="button contacts-button-map" href="blank.html">КАК ПРОЕХАТЬ</a>
             <a href="blank.html">ОБРАТНАЯ СВЯЗЬ</a>
         </section>
 
@@ -111,24 +131,25 @@
             <form action="https://echo.htmlacademy.ru" method="POST">
                 <p>
                     <label for="appointment-date">Дата</label>
-                    <input id="appointment-date" type="text" name="date" placeholder="01.01.2021"> 
+                    <input id="appointment-date" type="text" name="date" placeholder="01.01.2021">
                 </p>
                 <p>
                     <label for="appointment-time">Время</label>
-                    <input id="appointment-time" type="text" name="time" placeholder="10:00"> 
+                    <input id="appointment-time" type="text" name="time" placeholder="10:00">
                 </p>
                 <p>
                     <label for="appointment-name">Имя</label>
-                    <input id="appointment-name" type="text" name="name" placeholder="Борода"> 
+                    <input id="appointment-name" type="text" name="name" placeholder="Борода">
                 </p>
                 <p>
                     <label for="appointment-phone">Телефон</label>
-                    <input id="appointment-phone" type="tel" name="phone" placeholder="+7 977 501-90-51"> 
+                    <input id="appointment-phone" type="tel" name="phone" placeholder="+7 977 501-90-51">
                 </p>
-                <button type="submit">Отправить</button> 
+                <button type="submit">Отправить</button>
             </form>
 
         </section>
+    </div>
     </main>
     <footer> 
         <section>

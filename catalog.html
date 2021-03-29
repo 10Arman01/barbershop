@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-<!--     <style>
-      body{
-        background:black;
-        color:white; 
-      }
-    </style> -->
+
     <header>
         <nav>
             <a href="index.html"><img src="img/logo.svg" alt="Логотип барбершопа  'ГОРДИНСКИЙ'" width="111" height="24"</a>
@@ -43,13 +41,49 @@
                   <input type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked> 
                   <label for="filter-baxter-of-california">Baxter of California </label>
                 </li>
-                <li></li>
-                <li></li>
+                <li>
+                   <input type="checkbox" name="mr-natty" id="filter-mr-natty" > 
+                    <label for="filter-mr-natty">Mr natty</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="suavecito" id="filter-suavecito"  checked> 
+                     <label for="filter-suavecito">Suavecito</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="malin-goetz" id="filter-malin-goetz">
+                    <label for="filter-malin-goedz">Malin+Goetz</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="murrays" id="filter-murrays">
+                    <label for="filter-murrays"> Murray’s</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="american-crew" id="filter-american-crew" checked>
+                    <label for="filter-american-crew">American crew</label>
+                </li>
               </ul>
             </fieldset>
             <fieldset>
               <legend>Групы товаров:</legend> 
+              <ul>
+                  <li>
+                      <input type="radio" name="product-group" id="filter-shaving" value="shaving">
+                      <label for="filter-shaving">Бритвенные принадлежности</label>
+                  </li>
+                  
+
+                  <li>
+                      <input type="radio" name="product-group" id="filter-care" value="hair-care" checked>
+                      <label for="filter-care">Средства для ухода</label>
+                  </li>
+
+                  <li>
+                      <input type="radio" name="product-group" id="filter-accessories" value="accessories">
+                      <label for="filter-accessories">Аксессуары</label>
+                 </li>
+              </ul>
             </fieldset>
+            <button type="submit">Показать</button>
           </form>
             
         </section>
